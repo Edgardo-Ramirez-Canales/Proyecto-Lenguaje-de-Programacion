@@ -1,0 +1,59 @@
+<programa>::-<bloque_instrucciones>
+<bloque_instrucciones>::-<instruccion>|<bloque_instrucciones>
+<instruccion>::-
+<operaciones>|<secuencia>|<declarar_variable>|<asignar>|<condicional>| <iteracion>|<leer>|<imprimir>|<operaciones>|<comentario>|<bloque_instrucciones>
+
+<secuencia>::-<bloque_instrucciones>
+<declarar_variable>::- <nombre_variable>' as '<tipo_dato>'='<valor>| <nombre_variable>' as '<tipo_dato>
+<nombre_variable>::- <cadena>
+<cadena>::- <letras>|<letras><entero>
+<letras>::- <mayusculas>|<minusculas>
+<mayusculas>::- ' A'| 'B '| 'C '| ' D'| ' E'| ' F'| 'G '| ' H'| 'I '| ' J' |' K'| 'L '| 'M '| ' N'| Ñ' '|' O'| ' P'| ' Q'| ' R'| ' S'| 'T '| 'U '| 'V '| 'W '| ' X'| 'Y'| ' Z'
+<minusculas>::- ' a'| 'b '| 'c '| ' d'| ' e'| ' f'| 'g '| ' h'| 'i '| ' j' |' k'| 'l '| 'm '| ' n'| ñ' '|' o'| ' p'| ' q'| ' r'| ' s'|'t'|'u'|'v'|'w'|'x'|'y'|'z'
+<digitos>::-<entero>|<digito><entero>
+<entero>::-1 '|' 2'|' 3'|'4 '|' 5'|' 6'|' 7'|' 8'|' 9'
+<tipo_dato>::-<caracter>|<cadena>|<entero>|<decimales>|<booleano>
+<booleano>::-<true>|<false>
+<decimales>::-<digitos>' . '<digitos>
+<caracter>::-'!'|'@'|'%'|'&'|'*'|'('|')'|'{'|'_'|'}'|'['|']'|':'|';'|'<'|'>'|'?'|<mayusculas>|<minusculas>
+<valor>::-<nombre_variable>|<cadena>|<numero>|<caracter>|<booleano>
+
+
+<asignar>::- <nombre_variable>'='<valor>
+<condicional>::-<si>|<si_sino>
+<si>::-'si ('<condicion>') {' <bloque_instrucciones> '}'
+<condicion>::-<nombre_variable><operador_relacional><valor>
+<operador_relacional>::- '=='|'<'|'=<'|'=>'|'!='|'>'
+<si_sino>::- 'si ('<condicion>') {'<bloque_instrucciones>'} sino {'<bloque_instrucciones>'}'
+
+<iteracion>::-<mientras>|<para>
+<mientras>::-'mientras ('<condicion>' ) { '<bloque_instrucciones>'}'
+<para>::-'para ('<variable_entera>' ; '<condicion_numerica>' ; '<contador>'{ '<bloque_instrucciones>' }'
+<variable_entera>::- 'entero '<nombre_variable>'='<numeros>
+<condicion_numerica>::-<variable_entera><operador_relacional><numero>
+<contador>::- <variable_entera>'+'<digitos>
+Función ya para las luces led y el agua
+<Controlador> ::- < operacion1>< operacion2> 
+<operacion1>::- <apagar_led>|<encender_led>|<operacion1>
+<apagar_led>::- <estado_apagado>
+<estado_apagado>::-<apagado><intensidad_led>|<apagado><temporizador>
+<apagado>::-'false'|'0'
+<intensidad_led>::-<digito>
+<encender_led>::- <estado_encendido> <Color> 
+<estado_encendido>::-<encendido>
+<encendido>::-'true'|'1'
+<Color> ::- <Codigo de color> | <Color>
+		<Codigo de color>::- <Entero> | <Cadena>
+<temporizador>::-<dígitos>|<temporizador>
+
+
+
+<operacion2>::- <apagar_chorro>|<encender_chorro>|<operacion2>
+<apagar_chorro>::- <estado_apagado>
+<estado_apagado>::-<apagado><intensidad_chorro>|<apagado><temporizador>
+<apagado>::-'false'|'0'
+<intensidad_chorro>::-<digito>
+<encender_chorro>::- <estado_encendido>
+<estado_encendido>::-<encendido>
+<encendido>::-'true'|'1'
+<temporizador>::-<dígitos>|<temporizador>
