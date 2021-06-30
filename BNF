@@ -34,7 +34,7 @@
 <contador>::- <variable_entera>'+'<digitos>
 
 
------------------------
+---------------------------------------------------------------------------------
 
 Función ya para las luces led y el agua
 <Controlador> ::- < operacion1>< operacion2> 
@@ -51,7 +51,7 @@ Función ya para las luces led y el agua
 <temporizador>::-<dígitos>|<temporizador>
 
 
-----------------------------
+--------------------------------------------------------------------------------
 <operacion2>::- <apagar_chorro>|<encender_chorro>|<operacion2>
 <apagar_chorro>::- <estado_apagado>
 <estado_apagado>::-<apagado><intensidad_chorro>|<apagado><temporizador>
