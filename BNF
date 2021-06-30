@@ -18,7 +18,7 @@
 <caracter>::-'!'|'@'|'%'|'&'|'*'|'('|')'|'{'|'_'|'}'|'['|']'|':'|';'|'<'|'>'|'?'|<mayusculas>|<minusculas>
 <valor>::-<nombre_variable>|<cadena>|<numero>|<caracter>|<booleano>
 
-
+--------------------------------------------
 <asignar>::- <nombre_variable>'='<valor>
 <condicional>::-<si>|<si_sino>
 <si>::-'si ('<condicion>') {' <bloque_instrucciones> '}'
@@ -32,6 +32,10 @@
 <variable_entera>::- 'entero '<nombre_variable>'='<numeros>
 <condicion_numerica>::-<variable_entera><operador_relacional><numero>
 <contador>::- <variable_entera>'+'<digitos>
+
+
+-----------------------
+
 Función ya para las luces led y el agua
 <Controlador> ::- < operacion1>< operacion2> 
 <operacion1>::- <apagar_led>|<encender_led>|<operacion1>
@@ -47,7 +51,7 @@ Función ya para las luces led y el agua
 <temporizador>::-<dígitos>|<temporizador>
 
 
-
+----------------------------
 <operacion2>::- <apagar_chorro>|<encender_chorro>|<operacion2>
 <apagar_chorro>::- <estado_apagado>
 <estado_apagado>::-<apagado><intensidad_chorro>|<apagado><temporizador>
