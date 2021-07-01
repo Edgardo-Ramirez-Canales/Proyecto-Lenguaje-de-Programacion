@@ -35,7 +35,11 @@
 <contador>::- <variable_entera>'+'<digitos>
 
 ---------------------------------------------------------------------------------
-<leer>::="leer"<declarar_variable>
+<leer> ::="leer"<declarar_variable>
+
+---------------------------------------------------------------------------------
+
+<imprimir> ::= "imprimir" <declarar_variable>
 
 ---------------------------------------------------------------------------------
 
@@ -62,8 +66,6 @@ Función ya para las luces led y el agua
 <apagado>::-'false'|'0'
 <intensidad_chorro>::-<digito>
 <encender_chorro>::- <estado_encendido>
-<estado_encendido>::-<encendido|<presion>
-<encendido>::-'true'|'1
-<presion> :: - <decimal>
-<decimal> ::- '0.' <entero> | <decimal><entero>
+<estado_encendido>::-<encendido>
+<encendido>::-'true'|'1'
 <temporizador>::-<dígitos>|<temporizador>
