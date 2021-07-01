@@ -18,7 +18,7 @@
 <caracter>::-'!'|'@'|'%'|'&'|'*'|'('|')'|'{'|'_'|'}'|'['|']'|':'|';'|'<'|'>'|'?'|<mayusculas>|<minusculas>
 <valor>::-<nombre_variable>|<cadena>|<numero>|<caracter>|<booleano>
 
---------------------------------------------
+-----------------------------------------------------------------------------------
 <asignar>::- <nombre_variable>'='<valor>
 <condicional>::-<si>|<si_sino>
 <si>::-'si ('<condicion>') {' <bloque_instrucciones> '}'
@@ -26,6 +26,7 @@
 <operador_relacional>::- '=='|'<'|'=<'|'=>'|'!='|'>'
 <si_sino>::- 'si ('<condicion>') {'<bloque_instrucciones>'} sino {'<bloque_instrucciones>'}'
 
+------------------------------------------------------------------------------------
 <iteracion>::-<mientras>|<para>
 <mientras>::-'mientras ('<condicion>' ) { '<bloque_instrucciones>'}'
 <para>::-'para ('<variable_entera>' ; '<condicion_numerica>' ; '<contador>'{ '<bloque_instrucciones>' }'
@@ -33,11 +34,14 @@
 <condicion_numerica>::-<variable_entera><operador_relacional><numero>
 <contador>::- <variable_entera>'+'<digitos>
 
+---------------------------------------------------------------------------------
+<leer>::="leer"<declarar_variable>
 
 ---------------------------------------------------------------------------------
 
 Función ya para las luces led y el agua
 <Controlador> ::- < operacion1>< operacion2> 
+---------------------------------------------------------------------------------
 <operacion1>::- <apagar_led>|<encender_led>|<operacion1>
 <apagar_led>::- <estado_apagado>
 <estado_apagado>::-<apagado><intensidad_led>|<apagado><temporizador>
@@ -51,16 +55,13 @@ Función ya para las luces led y el agua
 <temporizador>::-<dígitos>|<temporizador>
 
 
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 <operacion2>::- <apagar_chorro>|<encender_chorro>|<operacion2>
 <apagar_chorro>::- <estado_apagado>
 <estado_apagado>::-<apagado><intensidad_chorro>|<apagado><temporizador>
 <apagado>::-'false'|'0'
 <intensidad_chorro>::-<digito>
 <encender_chorro>::- <estado_encendido>
-<estado_encendido>::-<encendido> |<presion>
-<encendido>::-'true'|'1 '  
-<presion> :: - <decimal>
-<decimal> ::- '0.' <entero> |<entero> <digitos>
+<estado_encendido>::-<encendido>
+<encendido>::-'true'|'1'
 <temporizador>::-<dígitos>|<temporizador>
-
