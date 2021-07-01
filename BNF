@@ -62,6 +62,8 @@ Función ya para las luces led y el agua
 <apagado>::-'false'|'0'
 <intensidad_chorro>::-<digito>
 <encender_chorro>::- <estado_encendido>
-<estado_encendido>::-<encendido>
-<encendido>::-'true'|'1'
+<estado_encendido>::-<encendido|<presion>
+<encendido>::-'true'|'1
+<presion> :: - <decimal>
+<decimal> ::- '0.' <entero> | <decimal><entero>
 <temporizador>::-<dígitos>|<temporizador>
