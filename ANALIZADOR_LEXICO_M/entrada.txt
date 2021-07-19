@@ -1,0 +1,34 @@
+definir Led1;
+definir Led2;
+definir Contador;
+boolean Led3 = false;
+encender Led1, 2, 3 ;
+encender Led2;
+apagar Led2;
+
+repetir; 
+	mientras Contador < 7 ;
+		Contador + 1;
+	fin mientras;
+fin repetir;
+
+
+si Led1 > Led2;
+	Led2 ++;
+sino; 
+	Led1 --;
+fin si;
+
+si Led1 > Led2;
+	Led2 ++;
+sino; 
+	Led1 --;
+fin si;
+
+
+si Led1 > Led2;
+	Led2 ++;
+sino; 
+	Led1 --;
+fin si;
+

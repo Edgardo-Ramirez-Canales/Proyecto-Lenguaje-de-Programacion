@@ -1,0 +1,3 @@
+C:/Users/Edgardo/CLionProjects/ANALIZADOR_LEXICO_M/cmake-build-debug/CMakeFiles/ANALIZADOR_LEXICO_M.dir
+C:/Users/Edgardo/CLionProjects/ANALIZADOR_LEXICO_M/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Edgardo/CLionProjects/ANALIZADOR_LEXICO_M/cmake-build-debug/CMakeFiles/rebuild_cache.dir
