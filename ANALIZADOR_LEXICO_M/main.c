@@ -97,7 +97,8 @@ void Estados(){
 
     Estado = q0;
 }
-
+/*Esta funcion falta y no la e probado ya que tendriamos que hacer mas casos ya que tenemos que agregar algun otro contador ya que tengo que tener mas casos al tener mas simbolos diferentes asi como 
+les decia en la reunion */
 
 
 
