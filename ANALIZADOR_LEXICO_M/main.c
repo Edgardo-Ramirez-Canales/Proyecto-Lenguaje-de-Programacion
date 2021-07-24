@@ -144,19 +144,19 @@ int main() {
     i++;
     //-----------------------------------------------------------------------------
 
-    //-----------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------------------------------------
    //  DOCUMENTO DE SALIDA
     fputs("\n\n--------------->ESCRIBE DOCUMENTO DE SALIDA<----------------\n\n", archivoS);
     fprintf(archivoS, "Palabras Reservadas: %d", contadorPalabrasReservadas);
     fprintf(archivoS, "\nVariables: %d", contadorVariables);
     fprintf(archivoS, "\nNumeros: %d", contadorNumeros);
     fprintf(archivoS, "\nAritmeticos: %d", contadorSignos);
-    fprintf(archivoS, "\nSimbolos: %d", contadorSimbolos);
-    fprintf(archivoS, "\nEncender: %d", contadorEncender);
+    fprintf(archivoS, "\nSimbolos: %d", contadorSimbolos);          //OJO ESTA PARTE NO ESTA FUNCIONANDO TODAVIA NO TENENEMOS NADA QUE ESCRIBIR 
+    fprintf(archivoS, "\nEncender: %d", contadorEncender);          // TODAVIA:(
     fprintf(archivoS, "\nApagado: %d", contadorApagado);
     fprintf(archivoS, "\nCiclos: %d", contadorCiclos/2);
     fprintf(archivoS, "\nCondicional: %d", contadorCondicional/2);
-
+ // _______________________________________________________________________________________________________________________________
 
     int p;
     printf("DESEA ENCENDER:  0=NO  Y 1=SI  ");
