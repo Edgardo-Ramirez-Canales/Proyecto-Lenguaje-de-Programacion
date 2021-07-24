@@ -83,7 +83,31 @@ void Reservadas(){
 }
 //----------------------------------------------------------------------------------------------------------------------
 
+void Estados(){
+    
+    switch(Estado){
+        case 1:contadorVariables++; 	// Suma variables A ... Z		        //Estado vuelve ser 0
+            break;
+        case 2:contadorVariables++; 	//  A ... Z	 a ... z  0 ... 9
+            break;
+        case 3: Reservadas();		    // Palabras reservadas
+            break;
+        case 4:contadorNumeros++; 		//Numeros 0 ... 9
+            break;
+        case 5:contadorNumeros++; 		// 0 ... 9
+            break;
+        case 6:contadorNumeros++; 		// 0 ... 9
+            break;
+        case 7:contadorSignos++;		// -
+            break;
+        default:
+            break;
+    }
 
+    
+    
+    Estado = e0;
+}
 
 
 int main() {
