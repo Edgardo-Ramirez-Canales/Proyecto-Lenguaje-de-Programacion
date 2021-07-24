@@ -140,5 +140,55 @@ int main() {
 
     return 0;
 }
+
+
+/*  ESTA FUNCION ME AYUDARA PARA LA IMPRESION DE AGUA Y LUCES
+int i,j,k,n;
+	 scanf ("%d", &n);
+	 
+	 for(i=1; n-1>=i;i++){
+		 
+		 for(j=n;j>=i;j--){
+			 printf(" ");
+		 }
+		 for(k=1;2*i-1>=k;k++){
+			 printf("*!*");
+		 }
+		 printf("\n");
+	 }
+	 
+	 
+	 for(i=1;n>=i;i++){
+		 
+		 for(j=1;j<=i;j++){
+			 printf(" ");
+		 }
+		 
+		 for(k=2*n-1;2*i-1<=k;k--){
+			 printf("*!*");
+		 }
+		 printf("\n");
+	 }
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Faltan funciones seguiremos en conferencia a las 3 pila*/
 //HASTA EL MOMENTO COMPILA :)
