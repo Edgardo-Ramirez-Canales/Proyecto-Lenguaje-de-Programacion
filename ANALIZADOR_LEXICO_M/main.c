@@ -83,6 +83,10 @@ void Reservadas(){
 }
 //----------------------------------------------------------------------------------------------------------------------
 
+//Compañeros estaria bien que nos reunieramos a las 8 para avanzar esra funcion de estados pero pienso que algo asi iria la logica, 
+//y tambien falta probar la funcion que hicieron mas temprano con Fabiana para ver si cuenta todas las palabras reservadas y me escribe en
+//el documento de salida.
+
 void Estados(){
     
     switch(Estado){
@@ -103,9 +107,6 @@ void Estados(){
         default:
             break;
     }
-
-    
-    
     Estado = e0;
 }
 
