@@ -104,11 +104,37 @@ void Estados(){
             break;
         case 7:contadorSignos++;		// -
             break;
+        case 8:contadorSignos++; 			// +
+            break;
+        case 9:contadorSimbolos++; 			// =
+            break;
+        case 10:contadorSignos++; 			// -
+            break;
+        case 11:contadorSimbolos++; 		// =
+            break;
+        case 12:contadorSimbolos++; 		// <
+            break;
+        case 14:contadorSimbolos++; 		// >
+            break;
+        case 15:contadorSimbolos++; 		// =
+            break;
+        case 16:contadorSimbolos++; 		// =;
+            break;
+        case 17:contadorSignos++; 			// - +
+            break;
+        case 18:contadorSignos++; 			//  / * ^ !
+            break;
+        case 19:contadorSimbolos++; 		// . \n \t etc...
+            break;
+        case 20:contadorNumeros++; 			// .   0 ... 9				Para decimal
+            break;
         default:
             break;
     }
     Estado = e0;
 }
+//Creo que asi estaria bien la funcion de Estados.
+
 
 
 int main() {
