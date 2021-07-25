@@ -183,6 +183,7 @@ int main() {
     fprintf(archivoS, "\nCiclos: %d", contadorCiclos/2);
     fprintf(archivoS, "\nCondicional: %d", contadorCondicional/2);
  // _______________________________________________________________________________________________________________________________
+ // En Esta parte imprimimos las opciones de encendido y apagado.
 
     int p;
     printf("DESEA ENCENDER:  0=NO  Y 1=SI  ");
