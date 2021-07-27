@@ -1,2 +1,16 @@
-FALTA HACER NO FUNCIONO ESTA PARTE
+definir Led1;
+definir Led2;
+definir Led4;
+definir Chorro1;
+definir Contador;
+definir Posicion1;
+intensidad Agua1;
+boolean Led3 = false;
+encender Led1, 2, 3 ;
+encender Led2;
+encender Led4;
+encender Chorro1;
+apagar Led2;
+posicion Vertical;
+
 

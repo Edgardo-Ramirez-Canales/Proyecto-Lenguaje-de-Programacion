@@ -1,0 +1,13 @@
+
+
+--------------->ANALISIS DE  SALIDA<----------------
+
+Palabras Reservadas: 15
+Ciclos: 0
+Variables: 14
+Numeros: 2
+Aritmeticos: 0
+Simbolos: 15
+Encender: 4
+Apagado: 1
+Condicional: 0
