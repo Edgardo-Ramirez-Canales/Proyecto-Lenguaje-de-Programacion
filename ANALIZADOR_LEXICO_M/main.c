@@ -19,7 +19,6 @@
  * una entrada para verificar que cumplan con las reglas gramaticales especificadas.
 
  * */
-//AQUI ESTA A UN 90 % FUNCIONAL
 
 //FUNCIONES-------------------------------------------------------------------------------------------------
 void imprimir();
@@ -434,4 +433,3 @@ bool verificarReservada(char palabra[]){
  */
 
 
-//AQUI ESTA A UN 90 % FUNCIONAL
