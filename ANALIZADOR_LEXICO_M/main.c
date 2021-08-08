@@ -432,4 +432,4 @@ bool verificarReservada(char palabra[]){
  *
  */
 
-
+// EL TRABAJO ESTA AL 100%
